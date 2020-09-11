@@ -48,11 +48,30 @@ namespace Programozasi_tetelek
             Console.WriteLine("{0} olyan szám van, amely osztható 3-mal.", db);
             Console.WriteLine("**********************************************");
         }
+
+        static void Eldontes()
+        {
+            int i = 0;
+            while (i<tomb.Length && i !=69)
+            {
+                i++;
+            }
+            if (i<tomb.Length)
+            {
+                Console.WriteLine("Volt 69");
+            }
+            else
+            {
+                Console.WriteLine("Nem volt 69");
+            }
+            Console.WriteLine("**********************************************");
+        }
         static void Main(string[] args)
         {
             TombKiiras();
             Osszegzes();
             Megszamlalas();
+            Eldontes();
 
             Console.ReadKey();
         }
