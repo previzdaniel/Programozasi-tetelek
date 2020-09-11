@@ -21,23 +21,42 @@ namespace Programozasi_tetelek
                 }
                 Console.Write(tomb[i] + ", ");
             }
-        }
-        static void Main(string[] args)
-        {
-            TombKiiras();
-            Osszegzes();
-
-            Console.ReadKey();
+            Console.WriteLine("**********************************************");
         }
 
-        private static void Osszegzes()
+        static void Osszegzes()
         {
             int sum = 0;
             for (int i = 0; i < tomb.Length; i++)
             {
                 sum += tomb[i];
             }
-            Console.WriteLine("A tömb elemeinek összege: {0}",sum);
+            Console.WriteLine("A tömb elemeinek összege: {0}", sum);
+            Console.WriteLine("**********************************************");
         }
+
+        static void Megszamlalas()
+        {
+            int db = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[i] % 3 == 0)
+                {
+                    db++;
+                }
+            }
+            Console.WriteLine("{0} olyan szám van, amely osztható 3-mal.", db);
+            Console.WriteLine("**********************************************");
+        }
+        static void Main(string[] args)
+        {
+            TombKiiras();
+            Osszegzes();
+            Megszamlalas();
+
+            Console.ReadKey();
+        }
+
+
     }
 }
