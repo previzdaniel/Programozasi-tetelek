@@ -72,13 +72,32 @@ namespace Programozasi_tetelek
         static void Kivalasztas()
         {
             int i = 0;
-            while (i< tomb.Length && tomb[i] != 50)
+            while (i < tomb.Length && tomb[i] != 50)
             {
                 i++;
             }
             Console.WriteLine("Az 50 a {0}. helyen van", i+1);
             Console.WriteLine("**********************************************");
 
+        }
+
+        static void Kereses()
+        {
+            int i = 0;
+
+            while (i < tomb.Length && tomb[i] != 50)
+            {
+                i++;
+            }
+
+            if (i < tomb.Length)
+            {
+                Console.WriteLine("Van benne 50. a(z) {0}. helyen", i+1);
+            }
+            else
+            {
+                Console.WriteLine("Nincs benne 50.");
+            }
         }
         static void Main(string[] args)
         {
@@ -87,6 +106,7 @@ namespace Programozasi_tetelek
             Megszamlalas();
             Eldontes();
             Kivalasztas();
+            Kereses();
 
             Console.ReadKey();
         }
