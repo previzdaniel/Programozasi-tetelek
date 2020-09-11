@@ -8,8 +8,25 @@ namespace Programozasi_tetelek
 {
     class Program
     {
+        static int[] tomb = new int[10] {12,7,2,4,45,99,1,8,95,50};
+
+        static void TombKiiras()
+        {
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (i == 9)
+                {
+                    Console.WriteLine(tomb[i]);
+                    break;
+                }
+                Console.Write(tomb[i] + ", ");
+            }
+        }
         static void Main(string[] args)
         {
+            TombKiiras();
+
+            Console.ReadKey();
         }
     }
 }
