@@ -99,6 +99,21 @@ namespace Programozasi_tetelek
                 Console.WriteLine("Nincs benne 50.");
             }
         }
+
+        static void Maximum()
+        {
+            int max = tomb[0];
+            for (int i = 1; i < tomb.Length; i++)
+            {
+                if (tomb[i] > max)
+                {
+                    max = tomb[i];
+                }
+            }
+            //Console.WriteLine(tomb.Max());
+
+            Console.WriteLine("A {0} a legnagyobb szám.", max);
+        }
         static void Main(string[] args)
         {
             TombKiiras();
@@ -107,6 +122,7 @@ namespace Programozasi_tetelek
             Eldontes();
             Kivalasztas();
             Kereses();
+            Maximum();
 
             Console.ReadKey();
         }

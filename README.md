@@ -31,6 +31,10 @@
 - kiírni a helyét a tömbben
 
 ## Keresés (lineáris)
-- Kereses() metódus létrhozása
+- Kereses() metódus létrehozása
 - van-e benne 50?
 - hányadik
+
+## Maximum keresés
+- Maximum() metódus létrehozása
+- kiírni a legnagyobb elemet
