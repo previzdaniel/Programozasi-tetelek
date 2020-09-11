@@ -25,8 +25,19 @@ namespace Programozasi_tetelek
         static void Main(string[] args)
         {
             TombKiiras();
+            Osszegzes();
 
             Console.ReadKey();
+        }
+
+        private static void Osszegzes()
+        {
+            int sum = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                sum += tomb[i];
+            }
+            Console.WriteLine("A tömb elemeinek összege: {0}",sum);
         }
     }
 }
