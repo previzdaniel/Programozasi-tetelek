@@ -24,3 +24,8 @@
 - Eldontes() metódus létrehozása
 - van-e a tömbben 69
 - kiírni, hogy "van" vagy "nincs"
+
+## Kiválasztás
+- Kivalasztas() metódus létrehozása
+- hányadik az 50?
+- kiírni a helyét a tömbben
